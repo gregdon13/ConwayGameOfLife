@@ -4,15 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ConwayGameOfLife {
+    private SimpleWindow displayWindow;
     int dim;
     int[][] startMatrix = new int[dim][dim];
     List<Integer> neighborList;
 
     public ConwayGameOfLife(Integer dimension) {
+        this.displayWindow = new SimpleWindow(dimension);
         this.dim = dimension;
      }
 
     public ConwayGameOfLife(Integer dimension, int[][] startmatrix) {
+        this.displayWindow = new SimpleWindow(dimension);
         this.dim = dimension;
         this.startMatrix = startmatrix;
     }
@@ -26,10 +29,34 @@ public class ConwayGameOfLife {
     // Which cells are alive or dead in generation 0.
     // allocates and returns the starting matrix of size 'dimension'
     private int[][] createRandomStart(Integer dimension) {
-        return new int[dimension][dimension]; }
+        int[][] ranStart = new int[dimension][dimension];
+        for (int i = 0; i < dimension; i++) {
+            for (int j = 0; j < dimension; j++) {
+                ranStart[i][j] = oneOrZero();
+            }
+        }
+        return ranStart;
+    }
+
+    private int oneOrZero() {
+        Double num = Math.random();
+        if (num < 0.5) {
+            return 0;
+        } else {
+            return 1;
+        }
+    }
 
     public int[][] simulate(Integer maxGenerations) {
-        return new int[1][1];
+        int[][] nextGen = new int[dim][dim];
+        for (int k = 0; k < maxGenerations; k++) {
+            for (int i = 0; i < dim; i++) {
+                for (int j = 0; j < dim; j++) {
+                    nextGen[i][j] = isAlive(i, j, startMatrix);
+                }
+            }
+        }
+        return nextGen;
     }
 
     // copy the values of 'next' matrix to 'current' matrix,

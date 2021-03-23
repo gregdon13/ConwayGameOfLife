@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e282cee1-bfe9-42a3-9794-9633eb4654d1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Game-Of-Life-Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Game-Of-Life-Java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcodeconway/ConwayGameOfLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcodeconway/ConwayGameOfLife.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zipcodeconway/ConwayGameOfLifeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zipcodeconway/ConwayGameOfLifeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +169,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -191,7 +189,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConwayGameOfLife">
+  <component name="RunManager" selected="JUnit.ConwayGameOfLifeTest.runTest1">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -208,14 +206,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameofLife" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GameofLife" />
-      <module name="Game-Of-Life-Java" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -264,6 +254,23 @@
       <option name="PACKAGE_NAME" value="com.zipcodeconway" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodeconway.ConwayGameOfLifeTest" />
       <option name="METHOD_NAME" value="runTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConwayGameOfLifeTest.runTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Game-Of-Life-Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zipcodeconway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zipcodeconway" />
+      <option name="MAIN_CLASS_NAME" value="com.zipcodeconway.ConwayGameOfLifeTest" />
+      <option name="METHOD_NAME" value="runTest1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -336,20 +343,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.GameofLife" />
       <item itemvalue="Application.ConwayGameOfLife" />
       <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest" />
       <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest2" />
       <item itemvalue="JUnit.ConwayGameOfLifeTest" />
       <item itemvalue="Maven.ConwayLife" />
+      <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest1" />
         <item itemvalue="Application.ConwayGameOfLife" />
         <item itemvalue="JUnit.ConwayGameOfLifeTest" />
         <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest2" />
         <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest" />
-        <item itemvalue="Application.GameofLife" />
       </list>
     </recent_temporary>
   </component>
@@ -365,7 +372,7 @@
       <option name="presentableId" value="Default" />
       <updated>1519668901598</updated>
       <workItem from="1519668902904" duration="14517000" />
-      <workItem from="1616520406493" duration="3299000" />
+      <workItem from="1616520406493" duration="5927000" />
     </task>
     <servers />
   </component>
