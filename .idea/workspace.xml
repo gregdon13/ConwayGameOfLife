@@ -189,7 +189,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ConwayGameOfLifeTest.runTest1">
+  <component name="RunManager" selected="Application.ConwayGameOfLife">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -212,6 +212,19 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -341,9 +354,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest1" />
         <item itemvalue="Application.ConwayGameOfLife" />
         <item itemvalue="JUnit.ConwayGameOfLifeTest" />
+        <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest1" />
         <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest2" />
         <item itemvalue="JUnit.ConwayGameOfLifeTest.runTest" />
       </list>
@@ -362,6 +375,7 @@
       <updated>1519668901598</updated>
       <workItem from="1519668902904" duration="14517000" />
       <workItem from="1616520406493" duration="6531000" />
+      <workItem from="1616554769614" duration="4344000" />
     </task>
     <servers />
   </component>
@@ -443,6 +457,23 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/zipcodeconway/ConwayGameOfLifeTest.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zipcodeconway/ConwayGameOfLife.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">

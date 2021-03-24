@@ -6,18 +6,21 @@ import java.util.List;
 public class ConwayGameOfLife {
     private SimpleWindow displayWindow;
     int dim;
-    int[][] startMatrix = new int[dim][dim];
+    int[][] startMatrix;
     List<Integer> neighborList;
+    int generations;
 
     public ConwayGameOfLife(Integer dimension) {
         this.displayWindow = new SimpleWindow(dimension);
         this.dim = dimension;
+        this.generations = 0;
      }
 
     public ConwayGameOfLife(Integer dimension, int[][] startmatrix) {
         this.displayWindow = new SimpleWindow(dimension);
         this.dim = dimension;
         this.startMatrix = startmatrix;
+        this.generations = 0;
     }
 
     public static void main(String[] args) {
@@ -48,17 +51,26 @@ public class ConwayGameOfLife {
     }
 
     public int[][] simulate(Integer maxGenerations) {
-        int[][] nextGen = new int[dim][dim];
-        for (int k = 0; k < maxGenerations; k++) {
+        startMatrix = createRandomStart(dim);
+        for (int k = 0; k <= maxGenerations; k++) {
+            this.displayWindow.display(startMatrix, generations);
+            int[][] nextGen = new int[dim][dim];
             copyAndZeroOut(startMatrix, nextGen);
+            generations++;
+            this.displayWindow.sleep(125);
         }
-        return nextGen;
+        return startMatrix;
     }
 
     // copy the values of 'next' matrix to 'current' matrix,
     // and then zero out the contents of 'next' matrix
     public void copyAndZeroOut(int [][] next, int[][] current) {
-
+        for (int i = 0; i < dim; i++) {
+            for (int j = 0; j < dim; j++) {
+                current[i][j] = isAlive(i, j, next);
+            }
+        }
+        startMatrix = current;
     }
 
     // Calculate if an individual cell should be alive in the next generation.
@@ -80,7 +92,9 @@ public class ConwayGameOfLife {
         if (world[row][col] == 1) {
             if (counter < 2) {
                 return 0;
-            } else if (counter == 2 || counter == 3) {
+            } else if (counter == 2) {
+                return 1;
+            } else if (counter == 3) {
                 return 1;
             } else {
                 //catches more than 3

@@ -43,6 +43,7 @@ public class ConwayGameOfLifeTest {
                 {0, 0, 0, 0, 0}};
         ConwayGameOfLife sim = new ConwayGameOfLife(5, start);
         int[][] results = sim.simulate(10);
+        //System.out.println(Arrays.deepToString(results));
         assertTrue(java.util.Arrays.deepEquals(results, expected));
     }
 }
