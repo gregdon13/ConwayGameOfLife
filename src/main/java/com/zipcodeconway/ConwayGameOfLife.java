@@ -11,6 +11,7 @@ public class ConwayGameOfLife {
     int generations;
 
     public ConwayGameOfLife(Integer dimension) {
+        startMatrix = createRandomStart(dimension);
         this.displayWindow = new SimpleWindow(dimension);
         this.dim = dimension;
         this.generations = 0;
@@ -51,7 +52,6 @@ public class ConwayGameOfLife {
     }
 
     public int[][] simulate(Integer maxGenerations) {
-        startMatrix = createRandomStart(dim);
         for (int k = 0; k <= maxGenerations; k++) {
             this.displayWindow.display(startMatrix, generations);
             int[][] nextGen = new int[dim][dim];
